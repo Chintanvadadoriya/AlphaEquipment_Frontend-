@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components": ["components"],
+      "@style": ["styledComponents"],
+      "@guard": ["components/Guard"],
+      "@models": ["components/Popups/Models"],
+      "@hooks": ["hooks"],
+      "@services": ["services"],
+      "@utils": ["utils"],
+      "@redux": ["redux"],
+      "@connection": ["connection"],
+      "@constant": ["constant"],
+      "@contract": ["contract"],
+      "@abi": ["abi"]
+    }
+  }
+}

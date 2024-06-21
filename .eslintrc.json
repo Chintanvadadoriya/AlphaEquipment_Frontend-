@@ -1,0 +1,265 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    // "react-app",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:security/recommended", // https://github.com/nodesecurity/eslint-plugin-security
+    "plugin:sonarjs/recommended" // https://github.com/SonarSource/eslint-plugin-sonarjs#rules,
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "react-hooks"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      4
+    ],
+    "sonarjs/cognitive-complexity": "off",
+    "no-use-before-define": "off",
+    "no-undef": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 120,
+        "singleAttributePerLine": false,
+        "quoteProps": "preserve",
+        "tabWidth": 4,
+        "endOfLine": "auto"
+      }
+    ]
+    // "security/detect-object-injection" : "off"
+  },
+  "overrides": [
+    {
+      "files": "",
+      "rules": {
+        "security/detect-unsafe-regex": "off",
+        "no-useless-escape": "off",
+        "eqeqeq": "off",
+        "security/detect-object-injection": "off",
+        "react-hooks/exhaustive-deps": "off"
+      }
+    },
+    {
+      // react jsx files
+      "files": "",
+      "rules": {
+        "prettier/prettier": "off",
+        "camelcase": "off",
+        "jsdoc/require-jsdoc": "off",
+        "sonarjs/no-duplicate-string": "off",
+        "security/detect-non-literal-fs-filename": "off",
+        "security/detect-non-literal-require": "off",
+        "react/no-unknown-property": "off",
+        "security/detect-object-injection": "off", // ! https://github.com/nodesecurity/eslint-plugin-security/blob/master/docs/the-dangers-of-square-bracket-notation.md
+        "no-unused-vars": "off",
+        "indent": 0,
+        "quotes": "off",
+        "curly": "off",
+        "sonarjs/cognitive-complexity": "off",
+        "sonarjs/no-all-duplicated-branches": "off",
+        "sonarjs/no-collapsible-if": "off",
+        "sonarjs/no-duplicated-branches": "off",
+        "sonarjs/no-identical-expressions": "off",
+        "sonarjs/no-identical-functions": "off",
+        "sonarjs/no-redundant-boolean": "off",
+        "react/no-deprecated": "off",
+        "sonarjs/no-redundant-jump": "off",
+        "sonarjs/no-same-line-conditional": "off",
+        "sonarjs/prefer-immediate-return": "off",
+        "sonarjs/prefer-object-literal": "off",
+        "sonarjs/prefer-single-boolean-return": "off",
+        "react/no-direct-mutation-state": "off",
+        "react/no-unescaped-entities": "off",
+        "react/jsx-key": "off",
+        "react/jsx-no-duplicate-props": "off",
+        "react/jsx-no-target-blank": "off",
+        "react/no-string-refs": "off",
+        "react/prop-types": "off",
+        "security/detect-eval-with-expression": "off",
+        "security/detect-non-literal-regexp": "off",
+        "security/detect-possible-timing-attacks": "off",
+        "security/detect-unsafe-regex": "off",
+        "no-unused-expressions": "off",
+        "no-self-assign": "off",
+        "no-debugger": "off",
+        "no-dupe-keys": "off",
+        "no-empty": "off",
+        "no-extra-semi": "off",
+        "no-global-assign": [
+          "error",
+          {
+            "exceptions": [
+              "event"
+            ]
+          }
+        ],
+        "no-prototype-builtins": "off",
+        "no-redeclare": "off",
+        "no-undef": "off",
+        "no-unreachable": "off",
+        "no-useless-escape": "off",
+        "import/first": "off",
+        "valid-typeof": "off",
+        "eqeqeq": "off",
+        "no-array-constructor": "off",
+        "no-useless-concat": "off",
+        "array-callback-return": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "jsx-a11y/anchor-has-content": "off",
+        "jsx-a11y/alt-text": "off",
+        "no-template-curly-in-string": "off",
+        "no-mixed-operators": "off",
+        "no-throw-literal": "off",
+        "no-sequences": "off",
+        "no-useless-constructor": "off",
+        "no-script-url": "off",
+        "jsx-a11y/iframe-has-title": "off",
+        "no-loop-func": "off",
+        "no-use-before-define": "off"
+      }
+    },
+    {
+      // react js files
+      "files": "",
+      "rules": {
+        "prettier/prettier": "off",
+        "camelcase": "off",
+        "jsdoc/require-jsdoc": "off",
+        "sonarjs/no-duplicate-string": "off",
+        "security/detect-non-literal-fs-filename": "off",
+        "security/detect-non-literal-require": "off",
+        "security/detect-object-injection": "off", // ! https://github.com/nodesecurity/eslint-plugin-security/blob/master/docs/the-dangers-of-square-bracket-notation.md
+        "no-unused-vars": "off",
+        "indent": 0,
+        "quotes": "off",
+        "curly": "off",
+        "sonarjs/no-redundant-boolean": "off",
+        "sonarjs/prefer-immediate-return": "off",
+        "sonarjs/no-unused-collection": "off",
+        "sonarjs/no-collapsible-if": "off",
+        "sonarjs/no-redundant-jump": "off",
+        "sonarjs/cognitive-complexity": "off",
+        "no-undef": "off",
+        "eqeqeq": "off",
+        "no-unused-expressions": "off",
+        "no-loop-func": "off",
+        "no-array-constructor": "off",
+        "array-callback-return": "off",
+        "no-sequences": "off",
+        "import/first": "off",
+        "no-use-before-define": "off"
+      }
+    },
+    {
+      // config files
+      "files": "**/{config/**,*webpack*,*setupProxy*,*timestamp*,craco.config.js}",
+      "rules": {
+        "prettier/prettier": "off",
+        "jsdoc/require-jsdoc": "off",
+        "no-unused-vars": "off",
+        "sonarjs/no-duplicate-string": "off",
+        "security/detect-non-literal-fs-filename": "off",
+        "security/detect-non-literal-require": "off",
+        "indent": 0,
+        "quotes": "off",
+        "curly": "off",
+        "security/detect-object-injection": "off", // ! https://github.com/nodesecurity/eslint-plugin-security/blob/master/docs/the-dangers-of-square-bracket-notation.md
+        "singlequote": "off",
+        "strict": "off"
+      }
+    },
+    {
+      // cypress files
+      "files": [
+        "cypress/*.js",
+        "cypress/**/**/**.js"
+      ],
+      "rules": {
+        "prettier/prettier": "off",
+        "camelcase": "off",
+        "jsdoc/require-jsdoc": "off",
+        "sonarjs/no-duplicate-string": "off",
+        "security/detect-non-literal-fs-filename": "off",
+        "security/detect-non-literal-require": "off",
+        "security/detect-object-injection": "off", // ! https://github.com/nodesecurity/eslint-plugin-security/blob/master/docs/the-dangers-of-square-bracket-notation.md
+        "no-unused-vars": "off",
+        "indent": 0,
+        "quotes": "off",
+        "curly": "off",
+        "eqeqeq": "off",
+        "arrow-parens": "off",
+        "newline-per-chained-call": "off",
+        "semi": "off",
+        "comma-dangle": "off",
+        "prefer-const": "off",
+        "prefer-destructuring": "off",
+        "import/no-anonymous-default-export": "off"
+      }
+    },
+    {
+      // ts and tsx files
+      "files": "",
+      "rules": {
+        "prettier/prettier": "off",
+        "camelcase": "off",
+        "jsdoc/require-jsdoc": "off",
+        "sonarjs/no-duplicate-string": "off",
+        "security/detect-non-literal-fs-filename": "off",
+        "security/detect-non-literal-require": "off",
+        "security/detect-object-injection": "off", // ! https://github.com/nodesecurity/eslint-plugin-security/blob/master/docs/the-dangers-of-square-bracket-notation.md
+        "no-unused-vars": "off",
+        "indent": 0,
+        "quotes": "off",
+        "curly": "off",
+        "@typescript-eslint/no-redeclare": "off",
+        "no-undef": "off",
+        "sonarjs/cognitive-complexity": "off"
+      }
+    },
+    {
+      // react test files
+      "env": {
+        "jest": true,
+        "jest/globals": true
+      },
+      "files": "src/test/react/**/{*.reacttest.js,*.js}",
+      "plugins": [
+        "jest"
+      ],
+      "rules": {
+        "prettier/prettier": "off",
+        "camelcase": "off",
+        "jsdoc/require-jsdoc": "off",
+        "sonarjs/no-duplicate-string": "off",
+        "security/detect-non-literal-fs-filename": "off",
+        "security/detect-non-literal-require": "off",
+        "security/detect-object-injection": "off", // ! https://github.com/nodesecurity/eslint-plugin-security/blob/master/docs/the-dangers-of-square-bracket-notation.md
+        "no-unused-vars": "off",
+        "indent": 0,
+        "quotes": "off",
+        "curly": "off",
+        "jest/no-commented-out-tests": "off",
+        "jest/no-identical-title": "off",
+        "jest/expect-expect": "off",
+        "no-undef": "off"
+      }
+    }
+  ]
+}

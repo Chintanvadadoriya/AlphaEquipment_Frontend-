@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+.container{
+  max-width: 1260px !important;
+  width: 100% !important;
+}
+html,
+body {
+  max-width: 100vw;
+  /* overflow-x: hidden; */
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  background-color: #f0f0f0;
+  font-family: "Lato", sans-serif !important;
+}
+a {
+  text-decoration: none !important;
+}
+
+
+/* @font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-BookItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-RegularItali.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+} */
+
+/* @font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-ExtraBoldIta.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+} */
+
+/* @font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+} */
+
+/* @font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-Regulartalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brother1816 Printed";
+
+  src: url("../fonts/Brother1816Printed-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* @font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-BookItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+} */
+
+@font-face {
+  font-family: "Brother1816 Printed";
+  src: url("../fonts/Brother1816Printed-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Brother 1816";
+  src: url("../fonts/Brother1816-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+} */
